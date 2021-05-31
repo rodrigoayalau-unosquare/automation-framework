@@ -24,4 +24,8 @@ public class DriverFactory {
         }
         return wait;
     }
+
+    public static void sleep() throws InterruptedException {
+        Thread.sleep(5000);
+    }
 }

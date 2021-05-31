@@ -1,5 +1,6 @@
 package pages;
 
+import base.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,8 +21,9 @@ public class CheckoutPage {
         return new CheckoutPage();
     }
 
-    public boolean isSelectedCredit(){
+    public boolean isSelectedCredit() throws InterruptedException {
         WebElement creditCard = driver.findElement(By.xpath("//input[@id='credit']"));
+        DriverFactory.sleep();
         return creditCard.isSelected();
     }
 
