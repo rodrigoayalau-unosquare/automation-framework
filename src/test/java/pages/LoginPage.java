@@ -16,7 +16,7 @@ public class LoginPage {
         return new LoginPage();
     }
 
-    public LoginPage setKeys(String id, String pass) throws InterruptedException {
+    public LoginPage setKeys(String pass) throws InterruptedException {
         WebElement idInput = driver.findElement(By.id("emailInput"));
         idInput.sendKeys(id);
         WebElement passInput = driver.findElement(By.id("passwordInput"));
