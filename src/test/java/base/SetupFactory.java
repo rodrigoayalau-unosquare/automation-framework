@@ -25,7 +25,7 @@ public class SetupFactory {
 
     @BeforeClass
     public void reachPage(){
-        driver.get("http://127.0.0.1:5500/html5/bootstrap-5.0.0/shop/sign-in/index.html");
+        driver.get("file:///C:/Users/rodrigo.ayala/Documents/development/html5/bootstrap-5.0.0/shop/sign-in/index.html");
     }
 
     @AfterSuite(enabled=true)
