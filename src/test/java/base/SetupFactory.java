@@ -23,6 +23,7 @@ public class SetupFactory {
         wait = getWebDriverWait();
     }
 
+    //URL
     @BeforeClass
     public void reachPage(){
         driver.get("file:///C:/Users/rodrigo.ayala/Documents/development/html5/bootstrap-5.0.0/shop/sign-in/index.html");
